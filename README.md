@@ -8,7 +8,7 @@ A ring buffer is a solution to this problem, in which data wraps around to the b
 
 A visual representation of a ring buffer can be observed in Figure 1:
 
-![Picture1](https://user-images.githubusercontent.com/50441692/193831822-6fa77966-799e-47eb-a12e-2c812110b18a.png)
+![Picture1](https://user-images.githubusercontent.com/50441692/193799898-bf537636-9c55-4b31-bec7-08a529a28b1d.png)
 Figure 1
 
 To accomplish a better performance compared to the linear buffer, the ring buffer must keep track of the buffer's "Head" and "Tail" index positions, as well as some rules to prevent existing data from being overwritten. The Head index will increment with every element added into the buffer and will always point to the next “empty” slot in the array, similarly the Tail index will increment when data is read from the buffer. In Figure 2, data is going into the ring buffer and the Head index accordingly.
